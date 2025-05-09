@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid red;
+            width : 300px;
+        }
+        a{
+            border: 1px solid black;
+            width: 300px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        daum
+    </div>
+    <a href="http://naver.com">naver.com</a>
+    <span>w3schools</span>
+    <p>seoil</p>
+    <ul>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+
+        <!--
+            display가 inline or inline-block일 경우 코드상에서 줄바꿈도 간격으로 적용되므로
+            아래와 같이 한줄로 처리해야 디자인에 문제없는 경우가 발생
+            <li>menu1</li><li>menu2</li><li>menu3</li><li>menu4</li>
+          -->
+    </ul>
+    <style>
+        ul{
+            min-height: 20px;
+            border:1px solid gold;
+            padding: 0px;
+            text-align: center;
+            margin: 0px;
+        }
+        li{
+            border: 1px solid black;
+            display: inline-block;
+            list-style-type: none;
+            padding: 10px 24px;
+        }
+        li:hover{
+            background-color: aqua;
+        }/*마우스 올렸을때 나타나는 것*/
+    </style>
+</body>
+</html>
+<!-- 
+    블럭속성은 크기를 정할 수 있음
+    기본적으로 한줄을 차지
+    block 무조건 한줄 차지
+    inline 크기 지정 불가, 마진 및 패딩 지정 불가
+    inline-block 크기만큼을 차지 가능, 한줄 차지도 가능, 뒤에 뭐 붙을수도 있음
+-->

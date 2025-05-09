@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div class = head>
+            <ul>
+                <li>
+                    <img src="/images/menu.png" width="32px" height="32px" >
+                </li>
+                <li>
+                    <i class="fa-brands fa-google-pay"></i>
+                    <!-- <a href="#">pay</a> -->
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-comment"> </i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-bell"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </li>
+            </ul>
+        </div>
+        <div class = search>
+            <span style = "font-weight: bold;">NAVER&nbsp;</span><div class="search-container">
+                <input type="text" placeholder="검색어를 입력하세요">
+                <button><i class="fas fa-search"></i></button>
+              </div>
+
+        </div> 
+    </header>
+    <nav>
+        <ul>
+        <li class="icon-with-label">
+            <i class="fa-regular fa-envelope"></i><span>메일</span>
+        </li>
+        <!-- 클래스가 2개 적용중 -->
+        <li class="icon-with-label">
+            <i class="fa-solid fa-mug-saucer"></i><span>카페</span>
+        </li>
+        <li class="icon-with-label">
+            <i class="fa-solid fa-blog"></i></i><span>블로그</span>
+        </li>
+        <li class="icon-with-label">
+            <i class="fa-solid fa-store"></i></i><span>스토어</span>
+        </li>
+        <li class="icon-with-label">
+            <i class="fa-solid fa-newspaper"></i><span>뉴스</span>
+        </li>
+        <li class="icon-with-label">
+            <i class="fa-solid fa-chart-simple"></i><span>증권</span>
+        </li>
+        <li class="icon-with-label">
+            <i class="fa-solid fa-house"></i><span>부동산</span>
+        </li>
+        <li class="icon-with-label">
+            <i class="fa-solid fa-map"></i><span>지도</span>
+        </li>
+        <li class="icon-with-label">
+            <i class="fa-solid fa-book-open"></i><span>웹툰</span>
+        </li>
+        <li class="icon-with-label">
+            <i class="fa-solid fa-z"></i><span>치지직</span>
+        </li>
+        </ul>
+    </nav>
+    
+    <style>
+        .head, .head ul{
+            display: flex;
+            list-style-type: none;
+        }
+        .head{
+            justify-content: space-between;
+        }
+        .head ul{
+            font-size: 25px;
+        }
+        .head ul li{
+            margin:20px;
+            font-size: 30px;
+        }
+
+        .search{
+            display: flex;              /* 가로 정렬 */
+            align-items: center;        /* 수직 중앙 정렬 */
+            justify-content: center;    /* 전체를 가운데 정렬 */
+            gap: 0;
+            font-size: 60px;
+            color: #03c75a;
+            white-space: nowrap; /* ✅ 줄바꿈 방지 */
+
+        }
+        input{
+            color: #03c75a;
+            border-radius: 50px;
+            /* 곡률을 줌 클수록 곡률이 높아짐*/
+        }
+        input:active{
+            color: #03c75a;
+            border-radius: 50px;
+        }
+
+        img{
+            vertical-align: middle;
+        }
+        
+        a{
+            text-decoration: none;
+            border : 3px solid black;
+            border-radius: 100%;
+            /* a는 기본적으로 인라인 속성임 */
+            padding: 5px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            vertical-align: middle;
+            margin:20px;
+            font-size: 30px;
+        }
+        a:visited{
+            color: black;
+        }
+        a:active{
+            color: black;
+        }
+
+        .icon-with-label{
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            margin: 0 16px;
+        }
+        .icon-with-label i {
+            font-size : 24px;
+        }
+        nav ul{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: center; /* 중앙 정렬 */
+        text-align: center;
+        }
+        .search-container {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    margin: 0; /* 화면 가운데 정렬용 */
+    border: 2px solid #03c75a; /* 네이버 그린 */
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: white;
+  }
+
+  .search-container input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+
+  .search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #03c75a;
+    font-size: 20px;
+  }
+    </style>
+</body>
+</html>
