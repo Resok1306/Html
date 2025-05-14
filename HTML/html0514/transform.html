@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transition: transform 2s ease-in-out;
+    transform: rotate(90deg);
+    position : relative;
+    top:100px;
+    left: 100px;
+
+    /* jquery fadein fadeout */
+}
+    div:hover{
+        /* transform: translate(50px,100px); */
+        transform:  scale(1,2);
+        /* scale은 크기 변경 */
+        transform: skewX (45deg) ;
+        transform: matrix(1, -0.3, 1, 0, 0);
+    }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

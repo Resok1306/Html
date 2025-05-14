@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>기본 position : static</h3>
+    <div style = "background-color: gray;">
+        <label>이름</label>
+        <input type="text">
+        <label>전화번호</label>
+        <input type="text">
+        <label>이메일</label>
+        <input type="text">
+        
+    </div>
+    <div id="abs">
+        
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div id="div2">
+        <div id="div3">
+
+        </div>
+    </div>
+
+    <style>
+        #div2{
+            width: 100%;
+            border: 1px solid black;
+            background-color: white;
+            display: inline-block;
+            position: relative;
+            /* top: 0; */
+            /* left: 0; */
+        }
+
+        #div3{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            position: absolute;
+            /* 이러면 div2의 위치 기준으로 absolute가 적용된다. */
+            top: 200px;
+            left: 200px;
+        }
+        div{
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        #abs{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: fixed;
+            /* absolute 완전 고정 위치 */
+            /* fixed 가변적 고정 위치 */
+            /* absolute fixed relative sticky*/
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box" class="box">
+    </div>
+    <script>
+        // 1개의 content를 id가 box안에 넣기
+/*        let content='<div class="newscom">서울신문</div>"';
+        const box = document.getElementsById("box");
+        box.innerHTML=content;
+*/ 
+        var data = ["서울신문","프레시안","MBC","MBN","경향신문","한겨레","스포트조선","JTBC","전자신문","한국일보"];
+        const box = document.getElementById("box");
+
+        for(let value of data) {
+            let content = `<div class="newscom" data-original="${value}">${value}</div>`;
+            box.innerHTML+=content;
+        }
+        
+        const newscom = document.getElementsByClassName("newscom");
+
+        for(i=0;i<data.length;i++){
+        newscom[i].addEventListener("mouseover",(event)=>{
+            //this는 현재 객체를 의미하지만 이벤트에서는 윈도우 자신을 의미
+            // console.log(this);
+            // console.log(this.innerText);
+            // console.log(this.innerHTML);
+            event.target.textContent = "구독 | 기사보기";
+            event.target.style.backgroundColor = "blue";
+            event.target.style.color = "white";
+        });
+        newscom[i].addEventListener("mouseout",(event)=>{
+            //this는 현재 객체를 의미하지만 이벤트에서는 윈도우 자신을 의미
+            // console.log(this);
+            // console.log(this.innerText);
+            // console.log(this.innerHTML);
+            const originalText = event.target.dataset.original;
+            event.target.textContent = originalText;
+            event.target.style.backgroundColor = "white";
+            event.target.style.color = "black";
+        });
+    }
+    </script>
+</body>
+<style>
+    .box{
+        display: flex;
+        align-items: center;
+        /* item은 tag를 의미 */
+    }
+    .newscom{
+        border: 1px solid gray;
+        width: 150px;
+        height: 70px;
+        text-align: center;
+        align-content: center;
+        /* 글자같은 내부 요소는 내부에서 content로 해야함 */
+    }
+    a{
+        color: white;
+    }
+    /* .newscom:hover{
+        background-color: blue;
+        color: white;
+    } */
+    /* css의 문제점은 태그 내의 값을 동적으로 변경 불가. 해결방안은 javascript로 하는 것 */
+
+</style>
+</html>

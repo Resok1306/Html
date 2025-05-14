@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>div를 이용한 헤드라인</div>
+    <span>기사내용이에오</span>
+    <h1>헤드라인1</h1>
+    <p>기사내용</p>
+    <h2>헤드라인2</h2>
+    <h3>헤드라인3</h3>
+    <h4>헤드라인4</h4>
+    <h5>헤드라인5</h5>
+    <h6>헤드라인6</h6>
+    <!-- h1~6까지 있음 글자크기가 점점 작아짐 -->
+    <a href="https://www.w3schools.com">w3school</a>
+    <a href="https://naver.com">naver</a>
+    <a href="https://daum.net">daum</a>
+    <ul>
+        <li><a href="https://www.w3schools.com">w3school</a></li>
+        <li><a href="https://naver.com">naver</a></li>
+        <li><a href="https://daum.net">daum</a></li>
+        <!-- host reference => href -->
+        <!-- a는 inline -->
+    </ul>
+    
+    <ul>
+        <li onclick='location.href="https://www.w3schools.com"'>w3school</li>
+        <li onclick='location.href="https://naver.com"'>naver</li>
+        <li onclick='location.href="https://daum.net"'>daum</li>
+        <!-- li는 block -->
+    </ul>
+
+    <img src = "" style = "width : 30px" width="500px" height="500px" alt="이미지파일">
+    <!-- 이미지파일은 width나 height 하나만 조정할 경우 자동으로 비율을 맞춰 조정해준다. -->
+    <!-- width나 height가 여러곳에서 선언되었을 경우 우선순위는 기본 이미지에 달린 style이 최우선 된다. -->
+    <!-- alt는 사이트에서 보는 주석이나 마찬가지이다. -->
+    <!-- 만약 별도의 조치 없이 이미지 파일이 소실 되었을경우 사이트에서 알수있는 방법이 없으므로 alt를 꼭꼭 써놓아라 -->
+    <style>
+        img{
+            border: 5px solid red;
+        }
+        ul{
+            list-style-type: none;
+            border: 3px solid goldenrod;
+            border-radius: 5px;
+        }
+        li{
+            border-bottom: 1px solid grey;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a.active{
+            color: black;
+        }
+        a.visited{
+            color: black;
+        }
+    </style>
+</body>
+</html>

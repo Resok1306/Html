@@ -1,0 +1,61 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+/* a 구역에 글자 데코 없음 글자 색 하양 */
+
+nav{
+    background-color: black;
+    display: plex;
+    justify-content: space-between;
+}
+/* nav 구역 배경색 검정, flex형태, 양 옆으로 세팅 */
+
+.navbar_logo {
+    color:white;
+    font-size: 30px;
+}
+/* 클래스 이름이 navbar_logo인 곳들의 글자 하양색, 폰트 사이즈 30px */
+
+.navbar_logo > i{
+    font-size: 30px;
+}
+/* navbar_logo 클래스의 하위 i들에게 일괄 적용, 폰트사이즈 30px */
+
+.navbar_logo > a{
+    font-size: 10px;
+}
+/* navbar_logo 하위 a에게 일괄 적용, 폰트 크기 10px */
+
+.navbar_menu{
+    list-style-type: none;
+    display: flex;
+}
+/* navbar_menu클래스의 모든것에 리스트 형태 없음, flex형태로 전환 */
+
+.navbar_menu li{
+    padding:8px 16px;
+}
+/* navbar_menu클래스의 li에 padding 가로 8 세로 16으로 세팅 */
+
+.navbar_icon{
+    list-style-type: none;
+    display: flex;
+}
+/* navbar_icon 클래스의 모든것에 리스트 형태 없음, flex형태로 전환 */
+
+.navbar_icon li{
+    padding:8px 8px;
+}
+/* navbar_icon 클래스의 li에 padding 가로 8 세로 16으로 세팅 */
+
+nav{
+    align-items: center; /* logo를 세로중앙정렬 */
+}
+/* 모든 nav문에 적용, align-items 세로축 정렬 center 중앙으로 */
+
+*{
+    margin:0;
+    padding:0;
+}
+/* 모든곳에 margin과 padding 0으로 적용(따로 명시 안했을 경우에만) */
