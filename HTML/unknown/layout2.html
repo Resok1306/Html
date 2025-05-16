@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            width: 100%;
+            height: 100%;
+        }
+        /* *은 모든 태그를 의미 */
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: #c8e6c9;
+            margin: 0;
+        }
+        
+        header{
+            background: #2e7d32;
+            width: 80%;
+            height: 10%;
+        }
+
+        nav{
+            background: #388e3c;
+            width: 80%;
+            height: 10%;
+        }
+
+        .container{
+            display: flex;
+            width: 80%;
+            height: 70%;
+            /* 따로 div를 만들어 그곳에 aside와 section을 묶어서 처리 */
+            /* 이러면 float: left가 container의 왼쪽으로 고정되어서 상관 없음 */
+        }
+        aside{
+            background: #43a047;
+            width: 20%;
+            height: 100%;
+            float: left;
+            /* 왼쪽으로 바짝 붙이기 */
+        }
+        section{background: #4caf50;
+            width: 80%;
+            height: 100%;
+        }
+
+        footer{background: #66bb6a;
+            width: 80%;
+            height: 10%;
+            clear: both;
+        }
+        body{
+            text-align: center;
+        }
+        header, nav, .container, footer{
+            margin: 0 auto;
+        }
+</style>
+</head>
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <div class="container">
+        <aside>side</aside>
+        <section>contents</section>
+    </div>
+    <footer>footer</footer>
+</body>
+</html>

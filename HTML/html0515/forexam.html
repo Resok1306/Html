@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for(i=0;i<10;i++){
+        //     document.write("test$(i)<br>");
+        // }
+        let arr=["test1","test2","test3","test4","test5"];
+
+        // for(i=0;i<arr.length;i++){
+        //     document.write("arr"+arr[i]+"<br>");
+        // }
+
+        // for, foreach, for in, for of
+        // arr.forEach(element => {
+        //     document.write(`arr${element}${index}<br>`);
+        // });
+        //콜백함수
+
+        // for(index in arr){
+        //     document.write(index+"<br>");
+        // }
+
+        // for(value of arr){
+        //     document.write(value+"<br>");
+        // }
+        for(i=0;i<arr.length;i++){
+            document.write(arr[i]+"<br>");
+        }
+
+        document.write("i value:"+i+"<br>")
+
+        for(i=0;i<arr.length;i++){
+            document.write(arr[i]+"<br>");
+        }
+
+        //xormdml whdfb : <div></div> : 태그와 태그 사이에 값이 입력되는 형태 <div>test</div>
+        // innerHTML, innerText -> textContent
+
+        let body = document.querySelector("body");
+        body.innerHTML = `<a href = "#">웹페이지 링크</a>`;
+        body.innerText = `<a href = "#">웹페이지 링크</a>`;
+        body.textContent = `<a href = "#">웹페이지 링크</a>`;
+        
+    </script>
+</body>
+</html>

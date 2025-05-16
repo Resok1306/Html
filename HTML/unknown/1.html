@@ -1,0 +1,58 @@
+<!-- 주석 ctrl / -->
+<!-- html문서는 header와 body로 구성된다 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 한글 깨짐 방지 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 창 이름 -->
+</head>
+<body>
+    hello
+    <!-- 웹페이지 글자 -->
+    <!-- tag는 태그명과 속성 = 값으로 이뤄져있다 -->
+    <div id = "title" class = "title" style="border:1px solid red">
+        html 처음 시작합니다
+    </div>
+    <!-- 
+        태그는 박스로 이뤄져있다
+        박스는 너비width와 높이height로 구성
+        박스는 테두리border 배경background 내용물font로 구성
+        테두리는 모양 굵기 색깔로 구성
+        배경은 모양 색깔
+        내용물은 색깔 굵기 크기
+        내용물은 좌우로 정렬align, 위아래 세로정렬valign 구성
+     -->
+
+     <!-- 
+        속성 중에 id는 단일 태그를 구별한다(중복불가) #을 사용하여 구분 
+        class는 중복이 가능 .을 사용하여 구분
+    -->
+    <div id="content">
+        content
+    </div>
+    <style>
+        /* 선택자 */
+        /* div */
+        /* #content */
+        /* .div */
+
+        #content{
+            width : 300px;
+            height : 200px;
+            border : 6px solid green;
+            /* 굵기 */
+            background-color: yellow;
+            color : red;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 200px;
+            margin : 20px;
+            padding: 20px;
+        }
+    </style>
+</body>
+</html>

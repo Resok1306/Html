@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <span>abcdefggggggggggggggggggggggg</span>
+        <span>12345677777777777777777777777</span>
+        <span>abcdefggggggggggggggggggggggg</span>
+        <span>123456777777777777777777777777777777777</span>
+        <span>abcdefggggggggggggggggggggggg</span>
+        <span>12345677777777777777777777777</span>
+        <span>abcdefggggggggggggggggggggggg</span>
+        <span>12345677777777777777777777777</span>
+        
+    </div>
+    <div class="box2" style="font-size: 50px;">
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </div>
+</body>
+<style>
+    .box{
+        border: 1px solid black;
+        font-size: 50px;
+        word-wrap: break-word;
+
+        /*display: flex;
+        flex-wrap: wrap;*/
+        /* display를 flex와 flex-wrap을 wrap으로 하지 않고 자동 줄바꿈 하는 법 */
+    }
+    .box2{
+        border: solid red;
+        word-wrap: break-word;
+        /* word-wrap 문장을 감싸겠다 break-word 문자에 제약을 준다 */
+        overflow-wrap: break-word;
+        
+    }
+</style>
+</html>
