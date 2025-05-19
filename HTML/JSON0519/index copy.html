@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img src="kim.png" alt="kim.png">
+        <span>kim</span>
+        <span>010-1111-1111</span>
+    </div>
+    <script>
+        //1)data.json부터 데이터를 수신
+        // 데이터통신 객체를 만들고 
+        // 페이지 요청하고
+        // 보내고
+        // 수신할 때 처리
+        let xmlhttp = new XMLHttpRequest("data.json");
+        console.log(xmlhttp);
+        xmlhttp.open("data.json");
+        xmlhttp.send();
+        xmlhttp.onreadystatechange=function(){
+            console.log(xmlhttp.responseText)
+            console.log("type1:"+typeof responseText)
+            var data = JSON.parse(xmlhttp.responseText);
+            console.log("type2:"+typeof data);
+            let body = document.querySelector("body");}
+
+            data.forEach((obj) => {
+            //console.log(obj);
+            let fw=`<div>
+                <img src="${obj.pic}" alt="${obj.pic}" width="100px">
+                <span>${obj.name}</span>
+                <span>${obj.hp}<span>
+                <div>`;
+            body.innerHTML += fw;
+                });
+                console.leg("type3:"+typeof JSON.stringify(data))
+
+        /*
+        let data=[
+        {"pic":"person.png","name":"kim","hp":"010-1111-1111"},
+        {"pic":"lee.png","name":"lee","hp":"010-1111-2222"},
+        {"pic":"hong.png","name":"hong","hp":"010-1111-3333"},
+        {"pic":"park.png","name":"park","hp":"010-1111-4444"},
+        {"pic":"ryu.png","name":"ryu","hp":"010-1111-5555"} 
+        ]
+        //{}은 배열임
+        */
+        /*
+        let body = document.querySelector("body");
+        data.forEach((obj) => {
+            //console.log(obj);
+            let fw=`<div><img src="${obj.pic}" alt="${obj.pic}" width="100px">
+                <span>${obj.name}</span>
+                <span>${obj.hp}<span>
+                <div>`;
+            body.innerHTML += fw;
+        //{}이 없으니 문자열
+        });
+        */
+    </script>
+    <style>
+        span{
+            display: block;
+        }
+    </style>
+</body>
+</html>

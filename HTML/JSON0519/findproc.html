@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log(location.href)
+        const urlParam = new URLSearchParams(location.search)
+
+        console.log(urlParam.get("id"));
+        console.log(id);
+
+        let xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("get","data2.json");
+        xmlhttp.send();
+        xmlhttp.onreadystatechange=function(){
+            console.log(xmlhttp.responseText);
+            //xmlhttp.responseText 객체로 변환하고
+            //변환된 객체에서 요청 id와 같은 객체를 찾아라
+            
+            try{
+                var data2 = JSON.parse(xmlhttp.responseText);
+                
+            }catch(e){
+                console.log(e);
+            }
+            /*
+            data2.forEach(element => {
+                if(element.id == id){
+                    console.log(element);
+                    return;
+                }
+            });*/
+        }
+    </script>
+</head>
+<body>
+    <a href="findprocmove.html">다른 페이지로 이동</a>
+</body>
+</html>
